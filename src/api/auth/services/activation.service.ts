@@ -1,12 +1,12 @@
 import { getManager } from 'typeorm';
 import { UserEntity } from '../../../modules/database/entities';
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { ErrorType } from '../../../core/enums';
-import { Validator } from '../../../core/utils/validator';
-import { KeyGenerator } from '../../../core/utils/generators';
+import { ErrorType } from '../../../main/enums';
+import { Validator } from '../../../main/utils/validator';
+import { KeyGenerator } from '../../../main/utils/generators';
 import { EmailService } from '../../../modules/email';
-import { AuthActivateDto } from '../../../core/dto/auth';
-import { AppEmail } from '../../../core/constants';
+import { AuthActivateDto } from '../../../main/dto/auth';
+import { AppEmail } from '../../../main/constants';
 
 @Injectable()
 export class ActivationService {

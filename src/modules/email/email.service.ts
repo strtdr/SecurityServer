@@ -1,7 +1,7 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import * as SendGrid from '@sendgrid/mail';
 import { MailDataRequired } from '@sendgrid/helpers/classes/mail';
-import { ErrorType } from '../../core/enums';
+import { ErrorType } from '../../main/enums';
 
 @Injectable()
 export class EmailService {

@@ -1,5 +1,5 @@
 import { Body, Controller, Post, UseGuards } from '@nestjs/common';
-import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from 'src/main/dto/auth/node_modules/@nestjs/swagger';
 import {
   AuthActivateDto,
   AuthLoginDto,
@@ -10,10 +10,10 @@ import {
   AuthUserGuard,
   IUserJwt,
   ResponseAuthDto,
-} from '../../core';
+} from '../../main';
 import { UserEntity } from '../../modules';
 import { ActivationService, AuthService, RestoreService } from './services';
-import { ActivateGuard } from '../../core/guards/auth';
+import { ActivateGuard } from '../../main/guards/auth';
 
 @ApiTags('Auth')
 @Controller('auth')

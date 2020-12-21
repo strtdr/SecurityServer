@@ -1,8 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { getManager } from 'typeorm';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiTags } from 'src/main/dto/auth/node_modules/@nestjs/swagger';
 import { RoleEntity, UserEntity } from '../../modules';
-import { RoleType } from '../../core';
+import { RoleType } from '../../main';
 
 @ApiTags('Seed')
 @Controller('seed')

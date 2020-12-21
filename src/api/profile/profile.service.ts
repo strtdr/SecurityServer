@@ -7,7 +7,7 @@ import {
 import { getManager } from 'typeorm';
 import * as bcrypt from 'bcryptjs';
 import { UserEntity } from '../../modules';
-import { AuthPasswordDto, ErrorType } from '../../core';
+import { AuthPasswordDto, ErrorType } from '../../main';
 
 @Injectable()
 export class ProfileService {

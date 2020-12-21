@@ -6,11 +6,11 @@ import {
   HttpStatus,
   Injectable,
 } from '@nestjs/common';
-import { ErrorType } from '../../../core/enums';
-import { Validator } from '../../../core/utils/validator';
-import { KeyGenerator } from '../../../core/utils/generators';
+import { ErrorType } from '../../../main/enums';
+import { Validator } from '../../../main/utils/validator';
+import { KeyGenerator } from '../../../main/utils/generators';
 import { EmailService } from '../../../modules/email';
-import { AppEmail } from '../../../core/constants';
+import { AppEmail } from '../../../main/constants';
 
 @Injectable()
 export class TwoFaService {

@@ -1,6 +1,6 @@
 import { Column, Entity, JoinTable, ManyToMany } from 'typeorm';
 import { AbstractEntity } from './AbstractEntity';
-import { PasswordTransformer } from '../../../core/utils/transformers';
+import { PasswordTransformer } from '../../../main/utils/transformers';
 import { RoleEntity } from './role.entity';
 
 

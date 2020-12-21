@@ -1,16 +1,16 @@
 import { getManager } from 'typeorm';
 import { UserEntity } from '../../../modules/database/entities';
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { ErrorType } from '../../../core/enums';
-import { Validator } from '../../../core/utils/validator';
-import { KeyGenerator } from '../../../core/utils/generators';
+import { ErrorType } from '../../../main/enums';
+import { Validator } from '../../../main/utils/validator';
+import { KeyGenerator } from '../../../main/utils/generators';
 import {
   AppEmail,
   ClientUrl,
   RestoreCompleteRoute,
-} from '../../../core/constants';
+} from '../../../main/constants';
 import { EmailService } from '../../../modules/email';
-import { AuthRestoreCompleteDto } from '../../../core/dto/auth';
+import { AuthRestoreCompleteDto } from '../../../main/dto/auth';
 
 @Injectable()
 export class RestoreService {

@@ -1,12 +1,12 @@
 import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
-import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from 'src/main/dto/auth/node_modules/@nestjs/swagger';
 import { ProfileService } from './profile.service';
 import {
   AuthPasswordDto,
   AuthUser,
   AuthUserGuard,
   IUserJwt,
-} from '../../core/';
+} from '../../main';
 import { UserEntity } from '../../modules/database/entities';
 
 @ApiTags('Profile')

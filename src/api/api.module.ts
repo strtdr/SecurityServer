@@ -1,6 +1,6 @@
 import { APP_GUARD } from '@nestjs/core';
 import { Module } from '@nestjs/common';
-import { ApiGuard } from '../core';
+import { ApiGuard } from '../main';
 import { AuthModule } from './auth';
 import { SeedModule } from './seed';
 import { ProfileModule } from './profile';

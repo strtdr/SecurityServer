@@ -1,3 +1,4 @@
+
 import {
   BadRequestException,
   ForbiddenException,
@@ -15,7 +16,7 @@ import {
   IUserJwt,
   JwtTransformer,
   RoleType,
-} from '../../../core';
+} from '../../../main';
 import { TwoFaService } from './two-fa.service';
 
 @Injectable()
