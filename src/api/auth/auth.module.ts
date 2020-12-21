@@ -10,28 +10,4 @@ import {
   TwoFaService,
 } from './services';
 
-@Module({
-  imports: [
-    ConfigModule,
-    EmailModule,
-    JwtModule.registerAsync({
-      imports: [ConfigModule],
-      useFactory: async (config: ConfigService) => ({
-        secret: config.get('JWT_SECRET'),
-        signOptions: {
-          expiresIn: config.get('JWT_EXPIRE'),
-        },
-      }),
-      inject: [ConfigService],
-    }),
-  ],
-  controllers: [AuthController],
-  providers: [
-    AuthService,
-    RestoreService,
-    ActivationService,
-    TwoFaService,
-    JwtStrategy,
-  ],
-})
 export class AuthModule {}
