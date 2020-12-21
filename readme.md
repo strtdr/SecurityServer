@@ -1,8 +1,11 @@
 # Security Server
 
+In this laboratory I use SendGrid to send secured email to the network.
+SendGrid is a Denver, Colorado-based customer communication platform for transactional and marketing email. 
+
 ## Installation
-Get an API Sendgrid key and setup your account. Then Add sendgrid key in .env file
-and email. Variables are SENDGRID_API_KEY and SENDGRID_EMAIL
+
+You need `SENDGRID_API_KEY` and `SENDGRID_EMAIL` api keys in the `.env` file.
 ```bash
 $ npm install
 $ docker-compose up --build
@@ -11,11 +14,11 @@ $ docker-compose up --build
 ## Running the app
 
 ```bash
-# docker-compose up
+docker-compose up
 ```
 
-## Swagger
+## Testing
 
 ```bash
-http://localhost:3000/swagger
+http://localhost:3000/api
 ```
